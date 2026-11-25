@@ -1,8 +1,6 @@
-# Let your ChatGPT Dot run T3 Code and hear back when it’s done
+# Connect a ChatGPT Dot to T3 Code
 
-**Start work on your own machine from a Dot. When T3 finishes, it wakes the Dot automatically, even after the Dot’s reply has ended.**
-
-Launching a coding task is the easy part. The problem is what happens once the assistant stops waiting: you’re left checking whether it finished. This setup connects your Dot to the official T3 Code MCP server and uses a completion event to bring the result back. No Codex Cloud bridge, Work agent, or polling loop.
+This guide shows how to start a task on your T3 Code host from a ChatGPT Dot. When the task finishes, T3 sends a completion event to ChatGPT so the Dot can verify the result without polling, even after its original reply has ended.
 
 **You’ll need:** a ChatGPT Dot with access to private plugins and MCP Events, a running T3 Code environment reachable through T3 Connect, and a signed-in coding provider in T3.
 
